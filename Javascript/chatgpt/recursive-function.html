@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hitungMundur(angka) {
+  if (angka === 0) {
+    console.log("Selesai!");
+    return; // berhenti
+  }
+
+  console.log(angka);
+  hitungMundur(angka - 1); // Panggil dirinya sendiri
+}
+
+hitungMundur(5);
+
+
+function faktorial(value) {
+    let result = 1;
+    for (let i = 1; i <= value; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+console.log(faktorial(5)); // Output: 120
+console.log(faktorial(0)); // Output: 1
+
+    // Faktorial dengan rekursif
+function faktorialRekursif(value) {
+    if (value === 1) {
+        return 1;
+    } else {
+        return value * faktorialRekursif(value - 1);
+    }
+}
+console.log(faktorialRekursif(10));
+
+
+
+
+    </script>
+</body>
+</html>

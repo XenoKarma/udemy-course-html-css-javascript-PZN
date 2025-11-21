@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let buku = [ {
+        judul: "Laskar Pelangi",
+        penulis: "Andrea Hirata",
+        tahunTerbit: 2005
+    },
+    {
+        judul: "Bumi Manusia",
+        penulis: "Pramoedya Ananta Toer",
+        tahunTerbit: 1980
+    },
+    {
+        judul: "Negeri 5 Menara",
+        penulis: "Ahmad Fuadi",
+        tahunTerbit: 2009
+    }];
+
+    //Versi gw
+    for( let i = 0; i < buku.length; i++) {
+        console.log(
+            "Judul: " + buku[i].judul,
+            "Penulis: " + buku[i].penulis,
+            "Tahun Terbit: " + buku[i].tahunTerbit
+        );
+    };
+
+    //versi chatgpt
+    for (let i = 0; i < buku.length; i++) {
+  console.log(`Judul: ${buku[i].judul}, Penulis: ${buku[i].penulis}, Tahun Terbit: ${buku[i].tahunTerbit}`);
+}
+
+
+
+</script>
+</body>
+</html>
